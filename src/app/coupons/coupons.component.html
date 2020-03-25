@@ -2,50 +2,57 @@
 
 
 <div class="container-fluid">
-   
-    <div class="card w-50 shadow-lg p-3 mb-5 bg-white rounded">
+
+  <div class="row card-group">
+    <div class="col-6" *ngFor="let detail of details">
+      <div class="card w-55 shadow-lg  mb-5 bg-white rounded " >
         <div class="card-body">
-
-           
-              <div style="width: 40%;  float: left; "> 
-                <img src="../../assets/images/bus.png" style="height: 120px; width:150px;"> 
-            </div>
-            <div > 
-              
-                <span class="heading">Get Flat Rs.200 instant dicount on Bus booking on Red bus</span>
-                <br>
-               <span class="news">
-           on First Ever bus booking
-           *Terms and conditions Apply
-          </span>
-          <button type="submit" class="btn btn-primary">click for coupon code</button>
-          
-            </div>
-
-
-
-
-          
+    
+    
+          <div style="width: 40%;  float: left; ">
+            <img src="{{detail.image}}" style="height: 120px; width:150px;">
+          </div>
+          <div>
+    
+            <span class="heading">{{detail.heading}}</span>
+            <br>
+            <span class="news">
+              {{detail.terms}}
+            </span>
+            <button type="submit" class="btn btn-primary">click for coupon code</button>
+    
+          </div>
+    
         </div>
       </div>
-
-
-      <div class="card w-50 shadow-lg p-3 mb-5 bg-white rounded">
+    </div>
+    <!-- <div class="col-6">
+      <div class="card w-55 shadow-lg p-3 mb-5 bg-white rounded " *ngFor="let detail of details">
         <div class="card-body">
+    
+    
+          <div style="width: 40%;  float: left; ">
+            <img src="{{detail.image}}" style="height: 120px; width:150px;">
+          </div>
+          <div>
+    
+            <span class="heading">{{detail.heading}}</span>
+            <br>
+            <span class="news">
+              {{detail.terms}}
+            </span>
+            <button type="submit" class="btn btn-primary">click for coupon code</button>
+    
+          </div>
+    
+    
+        </div>
+      </div>
+    </div>
+  </div> -->
 
-           
-              <div style="width: 40%;  float: left; "> 
-                <img src="../../assets/images/abhi.jpg" style="height: 120px; width:150px;"> 
-            </div>
-            <div > 
-              
-                <span class="heading">Get Flat Rs.250 cashback on Bus booking on Abhibus</span>
-                <br>
-               <span class="news">
-           on First Ever bus booking
-           *Terms and conditions Apply
-          </span>
-          <button type="submit" class="btn btn-primary">click for coupon code</button>
-          
-            </div>
+  
+
+  
+
 </div>
