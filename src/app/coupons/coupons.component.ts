@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CouponService } from '../coupon.service';
+import { Coupon } from 'src/modals/coupon';
 
 @Component({
   selector: 'app-coupons',
@@ -7,43 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CouponsComponent implements OnInit {
 
-  details : Object=[
-    {
-      "image" : "../../assets/images/bus.png",
-      "heading" : "Get Flat Rs.200 instant dicount on Bus booking on Red bus",
-      "terms" : "on First Ever bus booking *Terms and conditions Apply",
-      
-    },
-    {
-      "image" : "../../assets/images/abhi.jpg",
-      "heading" : "Get Flat Rs.250 cashback on Bus booking on Abhibus",
-      "terms" : "on First Ever bus booking *Terms and conditions Apply"
-    },
-    {
-      "image" : "../../assets/images/bus.png",
-      "heading" : "Get Flat Rs.200 instant dicount on Bus booking on Red bus",
-      "terms" : "on First Ever bus booking *Terms and conditions Apply",
-      
-    },
-    {
-      "image" : "../../assets/images/abhi.jpg",
-      "heading" : "Get Flat Rs.250 cashback on Bus booking on Abhibus",
-      "terms" : "on First Ever bus booking *Terms and conditions Apply"
-    },
-    {
-      "image" : "../../assets/images/abhi.jpg",
-      "heading" : "Get Flat Rs.250 cashback on Bus booking on Abhibus",
-      "terms" : "on First Ever bus booking *Terms and conditions Apply"
-    }
-  ];
+  details:any;
 
-  constructor() {
-    // this.details = [
-        
-    // ]
-   }
+  constructor(private couponService : CouponService) { }
 
   ngOnInit(): void {
+    this.couponService.getBusCoupons().subscribe(data=>this.details=data);
+    console.log(this.details);
   }
 
+  
 }
