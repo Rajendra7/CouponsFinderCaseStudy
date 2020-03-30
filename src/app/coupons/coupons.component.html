@@ -19,7 +19,7 @@
             <span class="news">
               {{detail.terms}}
             </span>
-            <button type="submit" class="btn btn-primary">click for coupon code</button>
+            <button type="submit" class="btn btn-primary" (click)="flip()">click for coupon code</button>
 
           </div>
 
@@ -30,20 +30,20 @@
     <div class="container-fluid">
       <span class="bus">Flights</span>
       <div class="row card-group">
-        <div class="col-6" *ngFor="let detail of details">
+        <div class="col-6" *ngFor="let flight of flights">
           <div class="card w-55 shadow-lg  mb-5 bg-white rounded ">
             <div class="card-body">
 
 
               <div style="width: 40%;  float: left; ">
-                <img src="{{detail.image}}" style="height: 120px; width:150px;">
+                <img src="{{flight.image}}" style="height: 120px; width:150px;">
               </div>
               <div>
 
-                <span class="heading">{{detail.heading}}</span>
+                <span class="heading">{{flight.heading}}</span>
                 <br>
                 <span class="news">
-                  {{detail.terms}}
+                  {{flight.terms}}
                 </span>
                 <button type="submit" class="btn btn-primary">click for coupon code</button>
 
@@ -58,20 +58,20 @@
       <div class="container-fluid">
         <span class="bus">Trains</span>
         <div class="row card-group">
-          <div class="col-6" *ngFor="let detail of details">
+          <div class="col-6" *ngFor="let train of trains">
             <div class="card w-55 shadow-lg  mb-5 bg-white rounded ">
               <div class="card-body">
 
 
                 <div style="width: 40%;  float: left; ">
-                  <img src="{{detail.image}}" style="height: 120px; width:150px;">
+                  <img src="{{train.image}}" style="height: 120px; width:150px;">
                 </div>
                 <div>
 
-                  <span class="heading">{{detail.heading}}</span>
+                  <span class="heading">{{train.heading}}</span>
                   <br>
                   <span class="news">
-                    {{detail.terms}}
+                    {{train.terms}}
                   </span>
                   <button type="submit" class="btn btn-primary">click for coupon code</button>
                 </div>
@@ -84,20 +84,20 @@
       <div class="container-fluid">
         <span class="bus">Hotels</span>
         <div class="row card-group">
-          <div class="col-6" *ngFor="let detail of details">
+          <div class="col-6" *ngFor="let hotel of hotels">
             <div class="card w-55 shadow-lg  mb-5 bg-white rounded ">
               <div class="card-body">
 
 
                 <div style="width: 40%;  float: left; ">
-                  <img src="{{detail.image}}" style="height: 120px; width:150px;">
+                  <img src="{{hotel.image}}" style="height: 120px; width:150px;">
                 </div>
                 <div>
 
-                  <span class="heading">{{detail.heading}}</span>
+                  <span class="heading">{{hotel.heading}}</span>
                   <br>
                   <span class="news">
-                    {{detail.terms}}
+                    {{hotel.terms}}
                   </span>
                   <button type="submit" class="btn btn-primary">click for coupon code</button>
                 </div>
@@ -110,20 +110,20 @@
       <div class="container-fluid">
         <span class="bus">Fashion</span>
         <div class="row card-group">
-          <div class="col-6" *ngFor="let detail of details">
+          <div class="col-6" *ngFor="let fashion of fashions">
             <div class="card w-55 shadow-lg  mb-5 bg-white rounded ">
               <div class="card-body">
 
 
                 <div style="width: 40%;  float: left; ">
-                  <img src="{{detail.image}}" style="height: 120px; width:150px;">
+                  <img src="{{fashion.image}}" style="height: 120px; width:150px;">
                 </div>
                 <div>
 
-                  <span class="heading">{{detail.heading}}</span>
+                  <span class="heading">{{fashion.heading}}</span>
                   <br>
                   <span class="news">
-                    {{detail.terms}}
+                    {{fashion.terms}}
                   </span>
                   <button type="submit" class="btn btn-primary">click for coupon code</button>
                 </div>
@@ -136,20 +136,20 @@
       <div class="container-fluid">
         <span class="bus">Payment</span>
         <div class="row card-group">
-          <div class="col-6" *ngFor="let detail of details">
+          <div class="col-6" *ngFor="let payment of payments">
             <div class="card w-55 shadow-lg  mb-5 bg-white rounded ">
               <div class="card-body">
 
 
                 <div style="width: 40%;  float: left; ">
-                  <img src="{{detail.image}}" style="height: 120px; width:150px;">
+                  <img src="{{payment.image}}" style="height: 120px; width:150px;">
                 </div>
                 <div>
 
-                  <span class="heading">{{detail.heading}}</span>
+                  <span class="heading">{{payment.heading}}</span>
                   <br>
                   <span class="news">
-                    {{detail.terms}}
+                    {{payment.terms}}
                   </span>
                   <button type="submit" class="btn btn-primary">click for coupon code</button>
                 </div>
