@@ -8,7 +8,7 @@ import { Coupon } from 'src/modals/coupon';
 export class CouponService {
 
   constructor(private http : HttpClient) { }
-  buscouponUrl = "../../assets/data/buscoupons.json"
+  buscouponUrl = "http://localhost:3000/api/coupons"
   flightCouponUrl = "../../assets/data/flightcoupons.json"
   trainCouponUrl = "../../assets/data/traincoupons.json"
   hotelCouponUrl ="../../assets/data/hotelcoupons.json"
