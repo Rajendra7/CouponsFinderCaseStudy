@@ -19,3 +19,57 @@
     margin-left: 45%;
     background-color: lawngreen;
 }
+
+
+
+
+
+
+
+.main {
+    margin-top: 20px;
+    width: 630px;
+    height: 150px;
+      
+}
+
+.player {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+
+    .player div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(145, 178, 228);
+        text-align: center;
+        line-height: 200px;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        /* border-radius: 50%; */
+    }
+   
+
+    .player .back {
+        background: #222;
+        color: #FFF;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+input {
+    display: none;
+}
+
+.player.voted {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}

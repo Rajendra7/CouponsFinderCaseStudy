@@ -27,4 +27,13 @@ export class NewsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  flipped = false;
+  imgSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtkL8GlKZ775j3f0VVgS1rU8L2LoX5UEM6fKv_eGLzeza27WYH"
+
+  flipIt() {
+    this.flipped = !this.flipped;
+  }
+ 
+
+
 }

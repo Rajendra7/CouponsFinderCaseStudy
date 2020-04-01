@@ -1,11 +1,13 @@
 <app-header></app-header>
 
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <span class="bus">Buses</span>
   <div class="row card-group">
     <div class="col-6" *ngFor="let detail of details">
+
       <div class="card w-55 shadow-lg  mb-5 bg-white rounded ">
+        
         <div class="card-body">
 
 
@@ -19,13 +21,38 @@
             <span class="news">
               {{detail.terms}}
             </span>
-            <button type="submit" class="btn btn-primary" (click)="flip()">click for coupon code</button>
+            <button type="submit" class="btn btn-primary" >click for coupon code</button>
 
           </div>
 
         </div>
       </div>
+    </div> -->
+    <div class="container-fluid">
+      <span class="bus">Buses</span>
+      <div class="row ">
+        <div class="col-6" *ngFor="let detail of details">
+     
+        <div class="main">
+      <div id="player" class="player" [class.voted]="flipped">
+          <div class="front">
+            
+            <div style="width: 40%;  float: left; ">
+              <img src="{{detail.image}}" style="height: 120px; width:150px; " >
+            </div>
+
+        </div>
+          <div class="back">Back</div>
+          
+      </div>
+      
     </div>
+    
+  </div>
+  <button class="btn-primary" ngbButton (click)="flipIt()">Flip: {{ flipped }}</button>
+  </div>
+  </div>
+
     <!-- ********************************************* -->
     <div class="container-fluid">
       <span class="bus">Flights</span>
